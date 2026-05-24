@@ -384,7 +384,7 @@ function updateCounter(){const now=new Date(),diff=now-startDate,sn=Math.floor(d
 updateCounter();setInterval(updateCounter,1000);
 const n2=new Date(),yr=n2.getFullYear();let anniv=new Date(yr,8,28);if(anniv<=n2)anniv=new Date(yr+1,8,28);
 const yrs=anniv.getFullYear()-2022,ords=['','1.','2.','3.','4.','5.','6.','7.','8.','9.','10.'];
-document.getElementById('next-d').textContent='22 Mayıs '+anniv.getFullYear();document.getElementById('next-l').textContent=(ords[yrs]||yrs+'.')+' yıl dönümü';
+document.getElementById('next-d').textContent='28 Eylül '+anniv.getFullYear();document.getElementById('next-l').textContent=(ords[yrs]||yrs+'.')+' yıl dönümü';
 function addMem(){const t=prompt('Yeni anınızı yazın:');if(!t||!t.trim())return;const li=document.createElement('li');li.innerHTML='<div class="mem-dot"></div><span>'+t.trim()+'</span>';document.getElementById('mem-list').appendChild(li);}
 
 // ===== HAFIZA =====
